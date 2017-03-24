@@ -1,0 +1,13 @@
+#!/bin/bash
+brew update
+brew upgrade
+brew cleanup -s
+brew cask cleanup
+#now diagnostic
+brew doctor
+brew missing
+apm upgrade -c false
+echo “Use mas upgrade to upgrade these apps from the app store:”
+mas outdated
+echo “install with: mas upgrade”
+npm update -g
