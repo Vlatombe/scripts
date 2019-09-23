@@ -8,6 +8,9 @@ brew cleanup -s
 #now diagnostic
 brew doctor
 brew missing
+# Gcloud
+gcloud components update --quiet
+# MacOS packages
 echo “Use mas upgrade to upgrade these apps from the app store:”
 mas outdated
 echo “install with: mas upgrade”

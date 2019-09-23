@@ -1,2 +1,3 @@
 #!/bin/bash
-/Applications/Dev/visualvm/bin/visualvm --jdkhome /System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/
+/Applications/VisualVM.app/Contents/MacOS/visualvm --jdkhome /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home &
+
