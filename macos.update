@@ -4,6 +4,7 @@ opscore update
 # Brew
 brew update
 brew upgrade
+brew cask upgrade
 brew cleanup -s
 #now diagnostic
 brew doctor
