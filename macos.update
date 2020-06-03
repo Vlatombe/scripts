@@ -1,6 +1,7 @@
 #!/bin/bash
 # Opscore
 opscore update
+opscore security update
 # Brew
 brew update
 brew upgrade
