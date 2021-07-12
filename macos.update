@@ -5,7 +5,7 @@ opscore security update
 # Brew
 brew update
 brew upgrade
-brew cask upgrade
+brew upgrade --cask
 brew cleanup -s
 #now diagnostic
 brew doctor
