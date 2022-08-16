@@ -10,6 +10,13 @@ brew cleanup -s
 #now diagnostic
 brew doctor
 brew missing
+# SDKMan
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk selfupdate
+sdk update
+sdk flush archives
+sdk flush tmp
 # Gcloud
 gcloud components update --quiet
 # MacOS packages
