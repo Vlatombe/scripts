@@ -15,12 +15,13 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk selfupdate
 sdk update
+sdk ug
 sdk flush archives
 sdk flush tmp
 # Gcloud
 gcloud components update --quiet
-# MacOS packages
-echo “Use mas upgrade to upgrade these apps from the app store:”
-mas outdated
-echo “install with: mas upgrade”
+# Upgrade Kubectl plugins
+kubectl krew upgrade
 npm update -g
+# MacOS packages
+mas upgrade
