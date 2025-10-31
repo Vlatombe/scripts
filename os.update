@@ -7,10 +7,13 @@ opscore security update
 brew update
 brew upgrade
 brew upgrade --cask
+brew link --overwrite node
 brew cleanup -s
 #now diagnostic
 brew doctor
 brew missing
+# Claude
+claude update
 # SDKMan
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

@@ -1,0 +1,11 @@
+#!/bin/bash
+printf "\e]2;starting\a"
+x=0
+while "$@"
+do
+  x=$((x+1))
+  printf "\e]2;passed ${x}×\a"
+  clear
+done
+echo "$@ passed ${x}× before failing"
+printf "\e]2;Terminal\a"
