@@ -1,4 +1,5 @@
 #!/bin/zsh
+set -e
 zsh -ic "omz update"
 # Opscore
 opscore update
@@ -28,4 +29,7 @@ gcloud components update --quiet
 kubectl krew upgrade
 npm update -g
 # MacOS packages
-mas upgrade
+if [ -n "$(mas outdated)" ]; then
+    echo "Updating Mac App Store apps..."
+    mas upgrade
+fi
